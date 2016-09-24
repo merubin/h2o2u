@@ -1,8 +1,6 @@
 body{
   background-image: url("hdwater2.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+
   background-size: cover;
 }
 
@@ -13,12 +11,42 @@ footer{
   color: #5E5E5E;
   background-color: #fff;
   opacity:.75;
-
-#button{
-  border:none;
+}
+#background{
+  background-image: url("drinkwater.jpg");
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: .1px solid #000;
+  z-index:-1;
+  position: relative;
+  display:flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  opacity: .8;
 }
 
+/*#button{
+  .myButton {
+  	box-shadow: 0px 1px 0px 0px #f0f7fa;
+  	background-color:#33bdef;
+  	border-radius:6px;
+  	border:1px solid #057fd0;
+  	display:inline-block;
+  	cursor:pointer;
+  	color:#ffffff;
+  	font-family:Arial;
+  	font-size:15px;
+  	font-weight:bold;
+  	padding:6px 24px;
+  	text-decoration:none;
+  	text-shadow:0px -1px 0px #5b6178;
+  }
+  .myButton:hover {
+
 }
+}*/
 
 #container{
   position: relative;
@@ -41,7 +69,7 @@ footer{
   /*transition: 1.5s 0.2s ease-out;*/
 }
 
-.location{
+#location{
   font-family: "Ek Mukta", sans-serif;
   font-size: 20px;
   color: #fff;
@@ -49,4 +77,8 @@ footer{
   text-align: center;
   font-style: oblique;
   text-shadow: 1px 1px black;
+}
+#location, #signal{
+  display: flex;
+  flex-direction: column;
 }
