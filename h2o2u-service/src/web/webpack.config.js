@@ -25,7 +25,9 @@ module.exports = {
     extensions: ['', '.js', '.jsx', '.es6.js'],
     modulesDirectories: [
       './node_modules',
-      'views']
+      'views',
+      'images',
+      'css']
   },
   module: {
     loaders: [
