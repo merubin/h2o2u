@@ -1,6 +1,8 @@
 import React from 'react'
 import RaisedButton from 'material-ui/RaisedButton';
 import Slider from 'material-ui/Slider';
+import {List, ListItem} from 'material-ui/List';
+import Checkbox from 'material-ui/Checkbox';
 
 export default class Col extends React.Component {
 
@@ -9,7 +11,7 @@ export default class Col extends React.Component {
     }
 
     render() {
-        let colors = ['blue', 'green'];
+        let colors = ['#9BBEE8', '#70CEE0', '#73CDD7','#87F99E','#87F99E'];
         let m = [];
         for(var color of colors) {
             m.push(<div style={{ height: '10px',
@@ -35,6 +37,12 @@ export default class Col extends React.Component {
                     </div>
              <Slider step={0.10} value={.5} />
             </div>
+
+            <div style={{background: 'white'}}>
+                <List>
+                   <ListItem primaryText="Particles" leftCheckbox={<Checkbox />} />
+               </List>
+           </div>
 
           <RaisedButton id="button" type="button" onClick={this.doNext}>Next</RaisedButton>
 
