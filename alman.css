@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Cinzel);
 
-
-
 .container{
   text-align: center;
   margin: auto;
@@ -14,12 +12,26 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
-}
-
-.sunset{
-  background: url(http://img.wallpaperfolder.com/f/63BA72E5C668/sunset-river-97109-high-quality-and.jpg)
+  color: white;
+  text-shadow: 3px 3px black;
+  background: url(http://img.wallpaperfolder.com/f/63BA72E5C668/sunset-river-97109-high-quality-and.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
 }
+
+.location{
+  display: flex;
+}
+
+footer{
+  text-align: center;
+}
+/*.sunset{
+  background: url(http://img.wallpaperfolder.com/f/63BA72E5C668/sunset-river-97109-high-quality-and.jpg)
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}*/
