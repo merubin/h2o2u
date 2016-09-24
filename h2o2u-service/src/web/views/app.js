@@ -50,6 +50,7 @@ render((
             <Route path="/intro" component={IntroWrapper} />
 
             <Route path="/" component={Yes} />
+            <Route path="/:zipcode" component={Yes} />
             <Route path="*" component={PageNotFound} />
         </Router>
     </MuiThemeProvider>
