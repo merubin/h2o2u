@@ -1,31 +1,41 @@
 body{
-
+background-image: url("../images/pure-waterbkg.jpg");
+background-size: cover;
 height: 100vh;
 width: 100vw;
+font-family: 'Bitter', serif;
+color: #00488E;
 }
 h1{
-  border: 1px solid red;
+
 text-align: center;
 width: 300px;
 margin: auto;
-
-
-
 }
 
 .navBar{
   display: flex;
   justify-content: center;
   margin-top: 30px;
-
-
 }
 .senses{
-  border: 1px solid red;
   height: 100px;
   width: 100px;
   margin: 10px;
 }
 #sight{
-background-image: url("../images/eye.png");
+background-image: url("../images/eye2.gif");
+background-size: contain;
+}
+#smell{
+  background-image: url("../images/smell.png");
+  background-size: cover;
+}
+#touch{
+  background-image: url("../images/touch.png");
+  background-size: cover;
+}
+#taste{
+  background-image: url("../images/taste.png");
+  background-size: cover;
 }
