@@ -15,13 +15,23 @@ footer{
   background-color: #fff;
   opacity:.75;
   position:absolute;
-  bottom: 10;
+  bottom: 30;
   width: 90%;
   /*height: 30%;*/
 }
 
 .buttonText{
   height:60%;
+}
+
+#question{
+  font-family: "Ek Mukta", sans-serif;
+  font-size: 40px;
+  color: #fff;
+  opacity: .9;
+  text-align: center;
+  font-style: oblique;
+  text-shadow: 1px 1px black;
 }
 
 #background{
@@ -39,6 +49,7 @@ footer{
   display:flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
 }

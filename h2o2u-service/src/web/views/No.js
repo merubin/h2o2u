@@ -1,16 +1,14 @@
 import React from 'react'
 import RaisedButton from 'material-ui/RaisedButton';
 
-export default class Yes extends React.Component {
+export default class No extends React.Component {
 
     render() {
-      console.log('hello');
         return (
         <div id="container">
-          <div id="question">Is Your Water Safe To Drink?</div>
-            <div id="body-yes">
+            <div id="body-no">
                 <div id="background" alt="drinkwater">
-                <h1 id="signal">Yes</h1>
+                <h1 id="signal">No</h1>
                 </div>
                 <div id="location">Washington, D.C.</div>
             </div>
