@@ -6,6 +6,13 @@ import Checkbox from 'material-ui/Checkbox';
 export default class Col extends React.Component {
 
     doNext() {
+        $.post("http://localhost:8080/0.1/water", "There is a problem with someones water, see the dashboard!", {
+            success: function(data) {
+            },
+            error: function(xhr) {
+            }
+        });
+
         window.location.assign("#/");
     }
 

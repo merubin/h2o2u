@@ -59,6 +59,7 @@ public class StatusChecker extends org.knowm.sundial.Job {
     }
 
     public static void notifySlack(String text) {
+        System.out.println("Posting to slack:" + text);
         String url = "https://hooks.slac"+
                 "k.com/servi" +
                 "ces/T2CEK4RPW/B2FJ5FBPB/o7Mz"+
