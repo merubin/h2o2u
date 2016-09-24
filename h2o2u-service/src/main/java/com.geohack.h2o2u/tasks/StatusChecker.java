@@ -32,7 +32,7 @@ public class StatusChecker extends org.knowm.sundial.Job {
     public static HashSet<String> keywords = new HashSet<String>();
     @Override
     public void doRun() throws JobInterruptException {
-
+        System.out.println("Checking http://vienna.wusa9.com");
         try {
             Connection.Response response = Jsoup.connect("http://vienna.wusa9.com").execute();
             Document doc = Jsoup.parse(response.body());
@@ -48,7 +48,7 @@ public class StatusChecker extends org.knowm.sundial.Job {
                     }
                 }
                 if(count > 2) {
-                    notifySlack();
+                    notifySlack("There is a water quality problem in Vienna Va.");
                 }
             }
         } catch (IOException e) {
@@ -58,7 +58,7 @@ public class StatusChecker extends org.knowm.sundial.Job {
 
     }
 
-    public static void notifySlack() {
+    public static void notifySlack(String text) {
         String url = "https://hooks.slac"+
                 "k.com/servi" +
                 "ces/T2CEK4RPW/B2FJ5FBPB/o7Mz"+
@@ -68,7 +68,7 @@ public class StatusChecker extends org.knowm.sundial.Job {
         HttpPost post = new HttpPost(url);
 
         try {
-            StringEntity se = new StringEntity("{\"text\": \"There is a water quality problem in Vienna Va.\"}" );
+            StringEntity se = new StringEntity("{\"text\": \""+text+"\"}" );
             post.setEntity(se);
 
             HttpResponse response = client.execute(post);

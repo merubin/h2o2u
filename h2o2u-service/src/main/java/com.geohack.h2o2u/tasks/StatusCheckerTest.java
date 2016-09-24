@@ -11,6 +11,6 @@ public class StatusCheckerTest {
     public void test() throws Exception {
         StatusChecker statusChecker = new StatusChecker();
         statusChecker.doRun();
-        statusChecker.notifySlack();
+        statusChecker.notifySlack("\"There is a water quality problem in Vienna Va.\"");
     }
 }
