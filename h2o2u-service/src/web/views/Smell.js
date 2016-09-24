@@ -21,7 +21,7 @@ export default class Col extends React.Component {
           </div >
 
              <div style={{background: 'white'}}>
-                 <List>
+                 <List className="smellList">
                     <ListItem primaryText="Chlorine" leftCheckbox={<Checkbox />} />
                     <ListItem primaryText="Gasoline" leftCheckbox={<Checkbox />} />
                     <ListItem primaryText="Ammonia" leftCheckbox={<Checkbox />} />

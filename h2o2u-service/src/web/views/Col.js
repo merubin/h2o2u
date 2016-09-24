@@ -23,7 +23,7 @@ export default class Col extends React.Component {
         return (
          <div>
           <h1>Color</h1>
-             <span>What color is the water?</span>
+             <span className="colorSpan">What color is the water?</span>
           <div id="eyeimg" style={{ display: 'flex' ,
               justifyContent: 'center',
               alignItems: 'center'}}>

@@ -21,7 +21,7 @@ export default class Col extends React.Component {
           </div >
 
              <div style={{background: 'white'}}>
-                 <span className="tasteWarning" style={{color:"#00488E;"}}>Do not taste the water if you haven't already.</span>
+                 <span className="tasteSpan" style={{color:"#00488E;"}}>Do not taste the water if you haven't already.</span>
 
                  <List className="tasteList">
                     <ListItem primaryText="Sweet" leftCheckbox={<Checkbox />} />

@@ -49,9 +49,17 @@ background-size: contain;
   margin-top: 100px;
   width: 75%;
 }
-.tasteList{
+.tasteList, .smellList{
   background-color: #EBF9FF;
+  font-family: 'Roboto', sans-serif;
+
 }
-.tasteWarning{
-  background-color: #EBF9FF
+.tasteSpan, .smellList{
+  background-color: #EBF9FF;
+  font-family: 'Roboto', sans-serif;
+
+}
+.colorSpan{
+  font-family: 'Roboto', sans-serif;
+
 }
