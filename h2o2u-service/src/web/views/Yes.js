@@ -6,14 +6,10 @@ import {browserHistory} from 'react-router';
 import 'h202.css';
 export default React.createClass({
 
-  getInitialState() {
-    return {
-      isOkay: false
-    }
-  },
     reportProblem() {
         window.location.assign("#/formView");
     },
+
     render() {
         let { zipcode } = this.props.params
         console.log(zipcode);
@@ -22,14 +18,16 @@ export default React.createClass({
             isOkay = false;
         }
 
-        let isOkayClassName;
+        let isOkayClassName,okayBorder;
         let isYes;
         if(isOkay) {
             isYes = <div>Yes</div>;
             isOkayClassName = 'isOkay'
+            okayBorder = 'isyesborder';
         } else {
             isYes = <div>No</div>;
             isOkayClassName = 'isNotOkay';
+            okayBorder = 'isnoborder';
         }
 
         return (
@@ -38,10 +36,11 @@ export default React.createClass({
             flexDirection: 'column',
             alignItems: 'center'
         }}  className={isOkayClassName}>
-        <div style={{ height: 'calc(100vh - 40px)'}}>
+        <div style={{ height: "100vh"}}>
           <div id="question">Is Your Water Safe To Drink?</div>
             <div id="body-yes">
-                <div id="background" alt="drinkwater">
+                <div id="background" alt="drinkwater"
+                  className={okayBorder}>
                   <h1 id="signal">{isYes}</h1>
                 </div>
             </div>
