@@ -7,4 +7,6 @@
 //
 
 
-$("#sight").css("background-image","../images/eye.png")
+$("#sight").click(function(){
+  window.location="color.html"
+})
