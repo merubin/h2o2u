@@ -1,0 +1,9 @@
+body {
+
+  background-image: url("resources/img/pure-waterbkg.jpg");
+}
+header {
+  text-align:center;
+  font-size: x-large;
+  display:flex;
+}
