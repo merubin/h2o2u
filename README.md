@@ -1,7 +1,7 @@
 Run: 
 
 To build Javascript:
-cd h2o2u-service/src/main/resources/react/
+cd h2o2u/h2o2u-service/src/web
 npm install   
 npm start
 
