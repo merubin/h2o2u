@@ -3,6 +3,9 @@ import { render } from 'react-dom'
 import PageNotFound from 'PageNotFound'
 import Yes from 'Yes'
 import Col from 'Col'
+import Taste from 'Taste'
+import Smell from 'Smell'
+import Finish from 'Finish'
 import Intro from 'Intro'
 import Store from 'Store'
 import Fluxxor from 'fluxxor'
@@ -40,6 +43,9 @@ render((
         <Router>
             <Route path="/yes" component={Yes} />
             <Route path="/color" component={Col} />
+            <Route path="/taste" component={Taste} />
+            <Route path="/smell" component={Smell} />
+            <Route path="/finish" component={Finish} />
             <Route path ="/formView" component={formView}/>
             <Route path="/intro" component={IntroWrapper} />
 
