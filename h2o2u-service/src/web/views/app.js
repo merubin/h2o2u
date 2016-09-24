@@ -10,10 +10,6 @@ import Intro from 'Intro'
 import Store from 'Store'
 import Fluxxor from 'fluxxor'
 import actions from 'actions'
-
-import { browserHistory, Router, Route, Link } from 'react-router';
-import 'h202.css';
-import "Col.css";
 import formView from 'formView'
 import { browserHistory, Router, Route, Link } from 'react-router';
 import 'h202.css';
