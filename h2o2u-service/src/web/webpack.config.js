@@ -14,6 +14,7 @@ module.exports = {
 
   output: {
     path: __dirname + '/__build__',
+    ///    path: __dirname + '/../../target/classes/assets',
     filename: '[name].js',
     chunkFilename: '[id].chunk.js',
     publicPath: '/__build__/'
@@ -26,6 +27,8 @@ module.exports = {
     modulesDirectories: [
       './node_modules',
       'views',
+      'constants',
+      'store',
       'images',
       'css']
   },

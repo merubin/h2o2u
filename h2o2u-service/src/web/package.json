@@ -13,6 +13,8 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "cors": "^2.8.1",
+    "fluxxor": "^1.7.3",
     "history": "^4.2.0",
     "material-ui": "^0.15.4",
     "react-router": "^2.8.1",
@@ -68,17 +70,5 @@
     "transform": [
       "loose-envify"
     ]
-  },
-  "tags": [
-    "react",
-    "router"
-  ],
-  "keywords": [
-    "react",
-    "react-component",
-    "routing",
-    "route",
-    "routes",
-    "router"
-  ]
+  }
 }
