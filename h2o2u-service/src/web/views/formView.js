@@ -18,7 +18,7 @@ export default class formView extends React.Component {
               <div className="senses" id="taste"></div>
             </nav>
         </div>
-        <RaisedButton id="button" type="button" onClick={this.doNext}>Next</RaisedButton>
+        <RaisedButton className="nextButton" type="button" onClick={this.doNext}>Next</RaisedButton>
 
         </div>
     )
