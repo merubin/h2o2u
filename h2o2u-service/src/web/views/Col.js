@@ -11,7 +11,7 @@ export default class Col extends React.Component {
     }
 
     render() {
-        let colors = ['#9BBEE8', '#70CEE0', '#73CDD7','#87F99E','#87F99E'];
+        let colors = ['#9BBEE8', '#70CEE0', '#73CDC1','#87D79E','#87F99E','#87FF9E', '#87FF9E'];
         let m = [];
         for(var color of colors) {
             m.push(<div style={{ height: '10px',
@@ -38,9 +38,9 @@ export default class Col extends React.Component {
              <Slider step={0.10} value={.5} />
             </div>
 
-            <div style={{background: 'white'}}>
+            <div style={{background: '#EBF9FF;'}}>
                 <List>
-                   <ListItem primaryText="Particles" leftCheckbox={<Checkbox />} />
+                   <ListItem className="particlesBackground" primaryText="Particles" leftCheckbox={<Checkbox />} />
                </List>
            </div>
 
