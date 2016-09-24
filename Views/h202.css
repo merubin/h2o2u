@@ -14,6 +14,10 @@ footer{
   background-color: #fff;
   opacity:.75;
 
+#button{
+  border:none;
+}
+
 }
 
 #container{
@@ -30,7 +34,7 @@ footer{
   font-size: 100px;
   text-align: center;
   color: #fff;
-  opacity:.9;
+  opacity:.8;
   font-weight: 900;
   text-shadow: .5px .5px black;
   margin:10px;
