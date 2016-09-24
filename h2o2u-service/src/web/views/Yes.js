@@ -3,7 +3,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import { Link } from 'react-router';
 import {browserHistory} from 'react-router';
 // ...
-import 'yes.css';
+import 'h202.css';
 export default React.createClass({
 
   getInitialState() {
@@ -42,12 +42,10 @@ export default React.createClass({
           <div id="question">Is Your Water Safe To Drink?</div>
             <div id="body-yes">
                 <div id="background" alt="drinkwater">
-                <h1 id="signal">{isYes}</h1>
-                    <div id="location">
-                        Washington, D.C.
-                    </div>
+                  <h1 id="signal">{isYes}</h1>
                 </div>
             </div>
+                  <div id="location">Washington, D.C.</div>
             </div>
             <footer>
               <div>
