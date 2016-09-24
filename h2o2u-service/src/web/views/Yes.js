@@ -1,4 +1,5 @@
 import React from 'react'
+import RaisedButton from 'material-ui/RaisedButton';
 
 export default class Yes extends React.Component {
 
@@ -8,13 +9,13 @@ export default class Yes extends React.Component {
             <div id="body-yes">
                 <div id="background" alt="drinkwater">
                 <h1 id="signal">Yes</h1>
-                    <div id="location">
-                        Washington, D.C.
-                    </div>
                 </div>
+                <div id="location">Washington, D.C.</div>
             </div>
             <footer>
-                <button id="button" type="button">Report a Problem</button>
+              <div>
+                <RaisedButton className="buttonText" label="Report a Problem" fullWidth={true} fullHeight={true} />
+              </div>
             </footer>
         </div>
     )

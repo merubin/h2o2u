@@ -1,7 +1,10 @@
-#body-yes{
-  background-image: url("/images/hdwater2.jpg");
+#container{
+  background-color: #EBF9FF;
+}
 
-  background-size: cover;
+#body-yes{
+  background-color: #D6F3FF;
+  border-radius: 70%;
 }
 
 footer{
@@ -11,42 +14,25 @@ footer{
   color: #5E5E5E;
   background-color: #fff;
   opacity:.75;
+  position:absolute;
+  bottom: 10;
+  width: 90%;
+  /*height: 30%;*/
 }
+
+.buttonText{
+  height:60%;
+}
+
 #background{
-  /*background-image: url("drinkwater.jpg");*/
-  height: 200px;
-  width: 200px;
+  background-image: url("http://www.cayugacounty.us/Portals/0/watersewer/Water.png");
+  height: 220px;
+  width: 220px;
   border-radius: 50%;
-  border: .1px solid #000;
-  z-index:-1;
+  border: 1px solid #B3B3B3;
   position: relative;
-  display:flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
   opacity: .8;
 }
-
-/*#button{
-  .myButton {
-  	box-shadow: 0px 1px 0px 0px #f0f7fa;
-  	background-color:#33bdef;
-  	border-radius:6px;
-  	border:1px solid #057fd0;
-  	display:inline-block;
-  	cursor:pointer;
-  	color:#ffffff;
-  	font-family:Arial;
-  	font-size:15px;
-  	font-weight:bold;
-  	padding:6px 24px;
-  	text-decoration:none;
-  	text-shadow:0px -1px 0px #5b6178;
-  }
-  .myButton:hover {
-
-}
-}*/
 
 #container{
   position: relative;
@@ -61,11 +47,11 @@ footer{
   font-family:sans-serif;
   font-size: 100px;
   text-align: center;
-  color: #fff;
+  margin-top: 50px;
+  color: #000;
   opacity:.8;
   font-weight: 900;
   text-shadow: .5px .5px black;
-  margin:10px;
   /*transition: 1.5s 0.2s ease-out;*/
 }
 
