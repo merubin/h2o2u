@@ -1,10 +1,12 @@
 package com.geohack.h2o2u;
 
 import com.geohack.h2o2u.config.H2Configuration;
+import com.geohack.h2o2u.resources.Dashboard;
 import com.geohack.h2o2u.resources.WaterResource_0_1;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+import io.dropwizard.views.ViewBundle;
 import org.knowm.dropwizard.sundial.SundialBundle;
 import org.knowm.dropwizard.sundial.SundialConfiguration;
 import org.knowm.dropwizard.sundial.tasks.AddCronJobTriggerTask;
@@ -31,6 +33,8 @@ public class Service extends Application<H2Configuration> {
     @Override
     public void initialize(Bootstrap<H2Configuration> bootstrap) {
         //for bootstrapping any commands
+        bootstrap.addBundle(new ViewBundle());
+
         bootstrap.addBundle(new SundialBundle<H2Configuration>() {
             @Override
             public SundialConfiguration getSundialConfiguration(H2Configuration configuration) {
@@ -44,6 +48,7 @@ public class Service extends Application<H2Configuration> {
             Environment environment) {
 
         environment.jersey().register(new WaterResource_0_1());
+        environment.jersey().register(new Dashboard());
 
         /* Pre dropwizard 1.0 scheduler resources */
         environment.admin().addTask(new LockSundialSchedulerTask());

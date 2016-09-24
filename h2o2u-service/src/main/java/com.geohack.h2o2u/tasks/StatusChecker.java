@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.TimeUnit;
 
-@SimpleTrigger(repeatInterval = 1, timeUnit = TimeUnit.SECONDS, isConcurrencyAllowed=true)
+@SimpleTrigger(repeatInterval = 1, timeUnit = TimeUnit.MINUTES, isConcurrencyAllowed=true)
 public class StatusChecker extends org.knowm.sundial.Job {
     private static final Logger logger = LoggerFactory.getLogger(StatusChecker.class);
 
