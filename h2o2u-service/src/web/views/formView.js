@@ -3,6 +3,10 @@ import RaisedButton from 'material-ui/RaisedButton';
 
 export default class formView extends React.Component {
 
+    doNext() {
+      window.location.assign("#/color");
+    }
+
     render() {
       console.log('hello');
         return (
@@ -16,7 +20,7 @@ export default class formView extends React.Component {
               <div className="senses" id="taste"></div>
             </nav>
         </div>
-        <RaisedButton id="button" type="button">Report a Problem</RaisedButton>
+        <RaisedButton id="button" type="button" onClick={this.doNext}>Next</RaisedButton>
 
         </div>
     )

@@ -1,11 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
-import User from 'User'
 import PageNotFound from 'PageNotFound'
-import MainApp from 'MainApp'
 import Yes from 'Yes'
 import Col from 'Col'
-import No from 'No'
 import Intro from 'Intro'
 import Store from 'Store'
 import Fluxxor from 'fluxxor'
@@ -44,12 +41,9 @@ render((
             <Route path="/yes" component={Yes} />
             <Route path="/color" component={Col} />
             <Route path ="/formView" component={formView}/>
-            <Route path="/no" component={No} />
             <Route path="/intro" component={IntroWrapper} />
 
-            <Route path="/" component={MainApp}>
-                <Route path="user/:userID" component={User} />
-            </Route>
+            <Route path="/" component={Yes} />
             <Route path="*" component={PageNotFound} />
         </Router>
     </MuiThemeProvider>

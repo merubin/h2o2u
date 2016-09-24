@@ -1,6 +1,8 @@
 import React from 'react'
 import RaisedButton from 'material-ui/RaisedButton';
-
+import { Link } from 'react-router';
+import {browserHistory} from 'react-router';
+// ...
 export default React.createClass({
 
   getInitialState() {
@@ -8,6 +10,9 @@ export default React.createClass({
       isOkay: false
     }
   },
+    reportProblem() {
+        window.location.assign("#/formView");
+    },
     render() {
       let noClassName;
       let isYes;
@@ -34,7 +39,9 @@ export default React.createClass({
             </div>
             <footer>
               <div>
-                <RaisedButton className="buttonText" label="Report a Problem" fullWidth={true} fullHeight={true} />
+                <RaisedButton className="buttonText" label="Report a Problem" fullWidth={true} fullHeight={true}
+                    onClick={this.reportProblem}
+                ><Link to="/formView"/></RaisedButton>
               </div>
             </footer>
         </div>
