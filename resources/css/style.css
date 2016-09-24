@@ -1,0 +1,31 @@
+body{
+
+height: 100vh;
+width: 100vw;
+}
+h1{
+  border: 1px solid red;
+text-align: center;
+width: 300px;
+margin: auto;
+
+
+
+}
+
+.navBar{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+
+}
+.senses{
+  border: 1px solid red;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+#sight{
+background-image: url("../images/eye.png");
+}
