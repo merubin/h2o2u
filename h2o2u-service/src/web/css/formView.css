@@ -14,6 +14,7 @@ text-align: center;
 width: 300px;
 margin: auto;
 font-size: 50px;
+color: #00488E;
 }
 
 .navBar{
@@ -44,6 +45,25 @@ background-size: contain;
   background-size: cover;
 }
 .nextButton{
-  margin-left: 600px;
+  margin-left: 180px;
   margin-top: 100px;
+  width: 75%;
+}
+.tasteList, .smellList, .particlesBackground{
+  background-color: #EBF9FF;
+  font-family: 'Roboto', sans-serif;
+
+}
+.tasteSpan, .smellList{
+  background-color: #EBF9FF;
+  font-family: 'Roboto', sans-serif;
+
+}
+.colorSpan{
+  font-family: 'Roboto', sans-serif;
+
+}
+.particlesBackground{
+  padding-top: 0;
+  padding-bottom: 0;
 }
