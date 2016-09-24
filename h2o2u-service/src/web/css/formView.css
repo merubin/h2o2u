@@ -1,0 +1,45 @@
+body{
+/*background-image: url("http://rubinsworld.com/h2o2u/pure-waterbkg.jpg");*/
+background-size: cover;
+height: 100vh;
+width: 100vw;
+font-family: 'Bitter', serif;
+color: #00488E;
+background-color: #EBF9FF;
+
+}
+h1{
+
+text-align: center;
+width: 300px;
+margin: auto;
+font-size: 50px;
+}
+
+.navBar{
+  display: flex;
+  justify-content: center;
+  margin-top: 65px;
+}
+.senses{
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+#sight{
+background-image: url("http://rubinsworld.com/h2o2u/eye2.gif");
+background-size: contain;
+
+}
+#smell{
+  background-image: url("http://rubinsworld.com/h2o2u/smell.png");
+  background-size: cover;
+}
+#touch{
+  background-image: url("http://rubinsworld.com/h2o2u/touch.png");
+  background-size: cover;
+}
+#taste{
+  background-image: url("http://rubinsworld.com/h2o2u/taste.png");
+  background-size: cover;
+}
