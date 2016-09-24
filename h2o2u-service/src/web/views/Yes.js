@@ -4,6 +4,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 export default class Yes extends React.Component {
 
     render() {
+      console.log('hello');
         return (
         <div id="container">
             <div id="body-yes">

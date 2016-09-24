@@ -1,21 +1,39 @@
 body{
 background-image: url("../images/pure-waterbkg.jpg");
 background-size: cover;
+
 height: 100vh;
 width: 100vw;
 font-family: 'Bitter', serif;
 color: #00488E;
+
 }
 h1{
 text-align: center;
 width: 300px;
 margin: auto;
 }
+.imgContainer{
 
+  width: 65%;
+  opacity: .8;
+  border: 1px double black;
+  background-color: #EEF7FC;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+img{
+height: 80%;
+width: 80%;
+
+}
 .navBar2{
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 0px;
 }
 .colorIndex{
   border: 1px solid red;
