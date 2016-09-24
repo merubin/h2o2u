@@ -13,6 +13,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "history": "^4.2.0",
     "react-router": "^2.8.1"
   },
   "peerDependencies": {

@@ -4,6 +4,7 @@ import com.geohack.h2o2u.config.H2Configuration;
 import com.geohack.h2o2u.resources.Dashboard;
 import com.geohack.h2o2u.resources.WaterResource_0_1;
 import io.dropwizard.Application;
+import io.dropwizard.assets.AssetsBundle;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 import io.dropwizard.views.ViewBundle;
@@ -34,6 +35,7 @@ public class Service extends Application<H2Configuration> {
     public void initialize(Bootstrap<H2Configuration> bootstrap) {
         //for bootstrapping any commands
         bootstrap.addBundle(new ViewBundle());
+        bootstrap.addBundle(new AssetsBundle("/assets", "/assets", "", "assets"));
 
         bootstrap.addBundle(new SundialBundle<H2Configuration>() {
             @Override
