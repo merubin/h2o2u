@@ -1,6 +1,8 @@
-#container{
-  background-color: #EBF9FF;
-}
+
+#body-yes{
+  background-image: url("/images/hdwater2.jpg");
+  background-size: cover;
+
 
 #body-yes{
   background-color: #D6F3FF;
@@ -14,24 +16,37 @@ footer{
   color: #5E5E5E;
   background-color: #fff;
   opacity:.75;
+  position: absolute;
+  bottom: 50;
+  width: 90%;
+  box-shadow: 5px 5px 5px 5px rgba(51, 51, 51, .8);
+}
+
+#background{
+ background-image: url("http://www.cayugacounty.us/Portals/0/watersewer/Water.png");
+ height: 220px;
+ width: 220px;
+ border-radius: 50%;
+ border: 1px solid #B3B3B3 ;
+ position: relative;
+ opacity: .8;
+ box-shadow: 5px 5px 5px 5px rgba(51, 51, 51, .8);
+}
+
+.noStyle{
+  background: rgb(51, 51, 51);
+}
+
+
+=======
   position:absolute;
-  bottom: 30;
+  bottom: 10;
   width: 90%;
   /*height: 30%;*/
 }
 
 .buttonText{
   height:60%;
-}
-
-#question{
-  font-family: "Ek Mukta", sans-serif;
-  font-size: 40px;
-  color: #fff;
-  opacity: .9;
-  text-align: center;
-  font-style: oblique;
-  text-shadow: 1px 1px black;
 }
 
 #background{
@@ -49,15 +64,21 @@ footer{
   display:flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   height: 100vh;
   width: 100vw;
+  background-color: #01d49c;
 }
 
 #signal {
   font-family:sans-serif;
   font-size: 100px;
   text-align: center;
+  color: rgba(51, 51, 51, .8);
+  opacity:.8;
+  font-weight: 900;
+  text-shadow: .5px .5px black;
+  margin-top: 50px;
+
   margin-top: 50px;
   color: #000;
   opacity:.8;
@@ -74,6 +95,9 @@ footer{
   text-align: center;
   font-style: oblique;
   text-shadow: 1px 1px black;
+  position: absolute;
+  width: auto;
+  padding-left: 38px;
 }
 #location, #signal{
   display: flex;
