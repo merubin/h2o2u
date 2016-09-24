@@ -1,12 +1,14 @@
 
-#body-yes{
-  background-image: url("//images/hdwater2.jpg");
+/*#body-yes{
+  background-image: url("/images/hdwater2.jpg");
+>>>>>>> styling
   background-size: cover;
-
+}*/
 
 #body-yes{
   background-color: #D6F3FF;
   border-radius: 70%;
+  display: flex;
 }
 
 footer{
@@ -31,6 +33,9 @@ footer{
  position: relative;
  opacity: .8;
  box-shadow: 5px 5px 5px 5px rgba(51, 51, 51, .8);
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
 }
 
 .noStyle{
@@ -38,7 +43,7 @@ footer{
 }
 
 
-=======
+.button{
   position:absolute;
   bottom: 10;
   width: 90%;
@@ -47,16 +52,6 @@ footer{
 
 .buttonText{
   height:60%;
-}
-
-#background{
-  background-image: url("http://www.cayugacounty.us/Portals/0/watersewer/Water.png");
-  height: 220px;
-  width: 220px;
-  border-radius: 50%;
-  border: 1px solid #B3B3B3;
-  position: relative;
-  opacity: .8;
 }
 
 #container{
@@ -78,12 +73,11 @@ footer{
   font-weight: 900;
   text-shadow: .5px .5px black;
   margin-top: 50px;
-
-  margin-top: 50px;
   color: #000;
   opacity:.8;
   font-weight: 900;
   text-shadow: .5px .5px black;
+  display: flex;
   /*transition: 1.5s 0.2s ease-out;*/
 }
 
@@ -99,7 +93,7 @@ footer{
   width: auto;
   padding-left: 38px;
 }
-#location, #signal{
+/*#location, #signal{
   display: flex;
   flex-direction: column;
-}
+}*/
