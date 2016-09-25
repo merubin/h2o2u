@@ -8,3 +8,5 @@ h2o2u-service/npm-debug.log
 h2o2u-service/h2o2u-service.iml
 h2o2u-service/src/web/__build__
 h2o2u-service/src/main/resources/assets/__build__/
+.DS_Store
+h2o2u-service/src/web/.DS_Store

@@ -47,7 +47,7 @@ public class StatusChecker extends org.knowm.sundial.Job {
                         count++;
                     }
                 }
-                if(count > 2) {
+                if(count >= 2) {
                     notifySlack("There is a water quality problem in Vienna Va.");
                 }
             }

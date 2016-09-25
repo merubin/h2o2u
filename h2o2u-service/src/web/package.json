@@ -10,7 +10,8 @@
     "umd"
   ],
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "deploy": "npm build"
   },
   "dependencies": {
     "cors": "^2.8.1",
