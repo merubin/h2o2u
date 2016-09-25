@@ -49,9 +49,9 @@ with the backend.
 ## Contributors
 * Back End -  Daniel Henneberger ( Oracle Corp ) me@danielhenneberger.com
 * Front End  - Mike Rubin (GA) michael@rubininsworld.com
-* Front End  - Alex Manno (GA)alman92@gmail.com;
-* Front End  - Michael Lai (GA) mike24567@gmail.com;
-* Front End  - Khoi Le (GA) khoileee89@gmail.com;
+* Front End  - Alex Manno (GA)alman92@gmail.com
+* Front End  - Michael Lai (GA) mike24567@gmail.com
+* Front End  - Khoi Le (GA) khoileee89@gmail.com
 
 ## Acknowledgments
 
