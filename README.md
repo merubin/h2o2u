@@ -56,5 +56,5 @@ with the backend.
 ## Acknowledgments
 
 * Thank you to our Geocent Hosts, Janna Corvitz, Keith Alphonso, Andrew Greis and Daniel Aloisi, for allowing us to create this awsome application. Thank you for providing a great venue, food, prizes.  Great job!
-* Thank you to
+
 * Special thanks to Daniel Henneberger for providing his mentorship to the GA team.  
